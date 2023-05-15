@@ -1,0 +1,6 @@
+git+https://github.com/ansible/ansible-sign
+pywinrm
+pynetbox
+pytz
+requests-credssp
+netaddr
