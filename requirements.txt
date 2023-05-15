@@ -4,3 +4,5 @@ pynetbox
 pytz
 requests-credssp
 netaddr
+pyOpenSSL
+cryptography==36.0.0
