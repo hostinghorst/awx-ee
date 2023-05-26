@@ -6,3 +6,7 @@ requests-credssp
 netaddr
 pyOpenSSL
 cryptography==36.0.0
+jmespath
+hvac
+psycopg2-binary
+netaddr
