@@ -5,7 +5,7 @@ pytz
 requests-credssp
 netaddr
 pyOpenSSL
-cryptography==36.0.0
+cryptography
 jmespath
 hvac
 psycopg2-binary
