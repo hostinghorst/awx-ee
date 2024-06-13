@@ -34,23 +34,3 @@ dependencies:
   system: bindep.txt
   python: requirements.txt
   galaxy: requirements.yml
-
-additional_build_steps:
-  # prepend_base:
-  #   - RUN echo "Additional steps for prepend_base"
-  append_base:
-    # - RUN echo "Additional steps for append_base"
-    - RUN alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 0
-  prepend_galaxy:
-    # - RUN echo "Additional steps for prepend_galaxy"
-  #  - ADD _build/configs/ansible.cfg ~/.ansible.cfg
-  # append_galaxy:
-  #   - RUN echo "Additional steps for append_galaxy"
-  # prepend_builder:
-  #   - RUN echo "Additional steps for prepend_builder"
-  # append_builder:
-  #   - RUN echo "Additional steps for append_builder"
-  # prepend_final:
-  #   - RUN echo "Additional steps for prepend_final"
-  # append_final:
-  #   - RUN echo "Additional steps for append_final"
