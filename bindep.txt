@@ -1,4 +1,5 @@
 python39-devel [platform:rpm compile]
+gcc-c++ [platform:rpm]
 subversion [platform:rpm]
 subversion [platform:dpkg]
 git-lfs [platform:rpm]
