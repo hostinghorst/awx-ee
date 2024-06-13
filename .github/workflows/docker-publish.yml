@@ -32,7 +32,7 @@ jobs:
           python-version: '3.8'
 
       - name: Install ansible-builder
-        run: pip3 install ansible-builder
+        run: pip3 install ansible-builder==3.0.0
 
       - name: Login to image repository
         if: github.ref_type == 'tag'
