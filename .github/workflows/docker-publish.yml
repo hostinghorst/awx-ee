@@ -45,7 +45,7 @@ jobs:
       - name: Build EE image
         run: |
           ansible-builder build \
-          --tag ghcr.io/thedatabaseme/awx-ee:latest \
+          --tag ghcr.io/panxatony/awx-ee:latest \
           --tag ${{ steps.meta.outputs.tags }} \
           --container-runtime docker \
           -f execution-environment.yml
