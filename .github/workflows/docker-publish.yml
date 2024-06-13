@@ -35,7 +35,7 @@ jobs:
         run: pip3 install ansible-builder==3.0.0
 
       - name: Install Python Devel Package
-        run: apt-get install python3-dev
+        run: sudo apt-get install python3-dev
 
       - name: Login to image repository
         if: github.ref_type == 'tag'
