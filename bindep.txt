@@ -1,5 +1,5 @@
 python3-devel [platform:rpm compile]
-python3-dev [platform:dpkg]
+libpython3.9-dev [platform:dpkg]
 gcc-c++ [platform:rpm]
 subversion [platform:rpm]
 subversion [platform:dpkg]
