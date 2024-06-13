@@ -25,8 +25,8 @@ options:
 
 dependencies:
   python_interpreter:
-    package_system: python3.11
-    python_path: /usr/bin/python3.11
+    package_system: python3.9
+    python_path: /usr/bin/python3.9
   ansible_core:
     package_pip: ansible-core~=2.15
   ansible_runner:
