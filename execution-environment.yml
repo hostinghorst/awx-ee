@@ -24,9 +24,9 @@ options:
   # user: 1000
 
 dependencies:
-  python_interpreter:
-    package_system: python3.8
-    python_path: /usr/bin/python3.8
+#  python_interpreter:
+#    package_system: python3.8
+#    python_path: /usr/bin/python3.8
   ansible_core:
     package_pip: ansible-core~=2.15
   ansible_runner:
