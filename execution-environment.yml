@@ -27,25 +27,4 @@ dependencies:
       - name: redhatinsights.insights
       - name: kubevirt.core
   system: bindep.txt
-  python: |
-    git+https://github.com/ansible/ansible-sign
-    ncclient
-    paramiko
-    pykerberos
-    pyOpenSSL
-    pypsrp[credssp]
-    pywinrm[credssp]
-    toml
-    pexpect>=4.5
-    python-daemon
-    pyyaml
-    six
-    receptorctl
-    pywinrm
-    pynetbox
-    pytz
-    requests-credssp
-    netaddr
-    jmespath
-    hvac
-    psycopg2-binary
+  python: requirements.txt
