@@ -8,20 +8,12 @@ version: 3
 #   ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: "--pre"
 #   ANSIBLE_GALAXY_CLI_ROLE_OPTS: "–no-deps"
 
+build_arg_defaults:
+  ANSIBLE_GALAXY_CLI_COLLECTION_OPTS: '--pre'
+
 images:
   base_image:
     name: quay.io/rockylinux/rockylinux:9
-
-options:
-  # container_init:
-  #   package_pip: dumb-init==1.2.5
-  #   entrypoint: '["/opt/builder/bin/entrypoint", "dumb-init"]'
-  #   cmd: '["bash"]'
-  package_manager_path: /usr/bin/microdnf
-  # relax_password_permissions: true
-  # skip_ansible_check: false
-  # workdir: /runner
-  # user: 1000
 
 dependencies:
   python_interpreter:
