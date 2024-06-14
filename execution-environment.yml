@@ -15,4 +15,4 @@ dependencies:
 additional_build_steps:
   prepend_base:
     # Enable Non-default stream before packages provided by it can be installed. (optional)
-    - RUN $PKGMGR install -y python3-devel krb5-devel
+    - RUN $PKGMGR install -y python3-devel krb5-devel libxml2-devel
