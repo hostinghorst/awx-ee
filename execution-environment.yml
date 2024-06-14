@@ -10,7 +10,7 @@ version: 3
 
 images:
   base_image:
-    name: quay.io/centos/centos:stream9-minimal
+    name: quay.io/rockylinux/rockylinux:9
 
 options:
   # container_init:
