@@ -9,22 +9,10 @@ dependencies:
     package_pip: ansible-core>=2.15.0rc2,<2.16
   ansible_runner:
     package_pip: ansible-runner
-  galaxy: |
-    ---
-    collections:
-      - name: awx.awx
-      - name: azure.azcollection
-        version: ">=2.1.0"
-      - name: amazon.aws
-      - name: theforeman.foreman
-      - name: google.cloud
-      - name: openstack.cloud
-      - name: community.vmware
-      - name: ovirt.ovirt
-      - name: kubernetes.core
-      - name: ansible.posix
-      - name: ansible.windows
-      - name: redhatinsights.insights
-      - name: kubevirt.core
+  galaxy: requirements.yml
   system: bindep.txt
   python: requirements.txt
+additional_build_steps:
+  prepend_base:
+    # Enable Non-default stream before packages provided by it can be installed. (optional)
+    - RUN $PKGMGR install -y python3-devel
