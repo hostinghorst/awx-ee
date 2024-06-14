@@ -12,6 +12,12 @@ jobs:
   build-ee-image:
     runs-on: ubuntu-20.04
 
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+
     steps:
       - uses: actions/checkout@v3
 
