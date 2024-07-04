@@ -14,3 +14,4 @@ collections:
   - name: ansible.windows
   - name: redhatinsights.insights
   - name: kubevirt.core
+  - name: community.hashi_vault
