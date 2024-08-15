@@ -25,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/panxatony/awx-ee
+          images: ghcr.io/hostinghorst/awx-ee
           flavor: latest=false
           tags: |
             type=ref,event=branch
@@ -54,7 +54,7 @@ jobs:
       - name: Build EE image
         run: |
           ansible-builder build \
-          --tag ghcr.io/panxatony/awx-ee:latest \
+          --tag ghcr.io/hostinghorst/awx-ee:latest \
           --tag ${{ steps.meta.outputs.tags }} \
           --container-runtime docker \
           -f execution-environment.yml
@@ -62,4 +62,4 @@ jobs:
       - name: Push EE image
         if: github.ref_type == 'tag'
         run: |
-          docker push ghcr.io/panxatony/awx-ee -a
+          docker push ghcr.io/hostinghorst/awx-ee -a
