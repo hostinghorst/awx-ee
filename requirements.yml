@@ -15,3 +15,6 @@ collections:
   - name: redhatinsights.insights
   - name: kubevirt.core
   - name: community.hashi_vault
+  - name: community.windows
+  - name: community.general
+  - name: community.zabbix
